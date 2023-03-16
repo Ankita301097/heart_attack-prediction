@@ -38,12 +38,12 @@ def data():
     
 
     
-    result = model.predict([[data]])
+    result = model.predict([data])
     print(result)
 
-    if result == 0:
+    if result[0] == 0:
         Heart_attack = "No"
-    if result == 1:
+    if result[0] == 1:
         Heart_attack = "Yes"
 
     return render_template("index.html",PREDICT_VALUE=Heart_attack)
