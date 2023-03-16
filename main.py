@@ -21,7 +21,7 @@ def data():
     input_data = request.form
     print(input_data)
     
-    data = np.zeros(len(col))
+    data = np.zeros(len(col)+1)
     data[0] = input_data['age']
     data[1] = input_data['sex']
     data[2] = input_data['cp']
@@ -49,4 +49,5 @@ def data():
     return render_template("index.html",PREDICT_VALUE=Heart_attack)
 
 if __name__ == "__main__":
+    print(len(col))
     app.run(host=CONFIG.HOST_NAME, port= CONFIG.PORT_NUMBER)

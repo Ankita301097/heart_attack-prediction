@@ -11,11 +11,11 @@
     <h1> Heart attack prediction model </h1>
     
     <form action="/get_data" method="POST">
-        <label>Age: </label><input type="number" step="any" name="Age"><br><br>
-        <label>Sex: </label><select> 
+        <label>Age: </label><input type="number" step="any" name="age"><br><br>
+        <label>Sex: </label><select name="sex"> 
             <option value=1> Male</option>
             <option value=0> female</option></select><br><br>
-        <label>chest pain: </label><select> 
+        <label>chest pain: </label><select name="cp"> 
             <option value=1> typical angina</option>
             <option value=2> atypical angina</option>
             <option value=3> non-angina pain</option>
@@ -23,21 +23,21 @@
         </select><br><br>
         <label>resting blood pressure(in mmHg): </label><input type="number" step="any" name="trtbps"><br><br>
         <lable>cholestoral(in mmHg): </lable><input type="number" step="any" name="chol"><br><br>
-        <lable>fasting blood sugar: </lable><select> 
+        <lable>fasting blood sugar: </lable><select name="fbs"> 
             <option value=1> (>120 mg/dl)</option>
             <option value=0> (less than 120 mg/dl)</option></select><br><br>
-        <label>resting ecg result: </label><select> 
+        <label>resting ecg result: </label><select name="restecg"> 
             <option value=0> normal</option>
             <option value=1> abnormal</option>
             <option value=2> ester</option>
         </select><br><br>
         <label>maximum heart rate: </label><input type="number" step ="any" name="thalachh"><br><br>
-        <label>exercise induced angina: </label><select> 
+        <label>exercise induced angina: </label><select name="exng"> 
             <option value=1> Yes</option>
             <option value=0> No</option></select><br><br>
         <label>previous peak: </label><input type="number" step="any" name="oldpeak"><br><br>
         <lable>slope: </lable><input type="number" step="any" name="slp"><br><br>
-        <lable>caa: </lable><select>
+        <lable>caa: </lable><select name="caa">
         <option value=0> 0</option>
         <option value=1> 1</option>
         <option value=2> 2</option>
